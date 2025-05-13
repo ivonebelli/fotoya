@@ -33,7 +33,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 16px;
@@ -873,5 +873,23 @@
             addNewPhoto();
         });
     </script>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página</title>
+</head>
+<body>
+    <h1 id="titulo">Título original</h1>
+    <p id="descripcion">Texto original.</p>
+
+    <!-- Aquí colocas tu código antes de cerrar el body -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("titulo").innerText = "Nuevo título";
+            document.getElementById("descripcion").innerText = "Texto actualizado.";
+        });
+    <script src="js/script.js"></script>
 </body>
 </html>
