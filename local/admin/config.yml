@@ -1,0 +1,15 @@
+# admin/config.yml
+backend:
+  name: github
+  branch: main
+  repo: FotoYa/mi-web  # ¡Cambia esto!
+
+media_folder: "img"
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "index"
+        file: "index.html"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
